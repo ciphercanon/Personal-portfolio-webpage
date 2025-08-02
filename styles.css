@@ -1,0 +1,208 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --site-border: rgba(99, 19, 19, 0.79);
+}
+
+.border{
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(-200deg, rgba(50,50,50,100%) 90%, rgba(40,40,40,0.6));
+  border: 1px solid black;
+  border-radius: 0% 0% 10px 10px;
+  overflow: hidden;
+}
+
+.teleport-whole{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  padding: 35px;
+  margin:  0 auto;
+  gap: 30px;
+  right: 0;
+  overflow: hidden;
+}
+
+.teleport{
+  list-style-type: none;
+}
+
+.teleport > a{
+    text-decoration: none;
+    font-size: 27px;
+    color: white;
+    overflow: hidden;
+}
+
+#welcome-section{
+background-color: rgb(157, 156, 156);
+padding: 20px ;
+display: flex;
+margin-top: 80px;
+width: 100%;
+height: 100%;
+max-height: 770px;
+}
+
+.welcome{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-size: 8vw;
+  max-width:200px;
+  min-width: 100px;
+  width: 100%;
+  margin-top: 8vw;
+  margin-left: 3vw;
+  padding: 0 auto;
+}
+
+.welcome-text{
+  display: flex;
+  font-size: 4vw;
+  margin-left: 3vw;
+  margin-right: 100px;
+  width: 100%;
+}
+
+@media (max-width: 50px){
+   .welcome-text{
+     font-size: 10px;
+   }
+
+}
+
+.face{
+  border-radius: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 600px;
+  max-height: 550px;
+  min-width: 100px;
+  min-height: 80px;
+  width: 35vw;
+  height: 30vw;
+  padding: 10px auto;
+  margin: 60px auto;
+  border: 5px solid black;
+  overflow: hidden;
+}
+
+#projects{
+background-color: rgb(255, 77, 0);
+padding: 5px;
+margin: 0;
+width: 100%;
+height: 100%;
+}
+
+.project-titles{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 5vw;
+}
+
+.project-tile{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 20px;
+  padding: 5px;
+  margin: 0;
+}
+
+.project-box{
+  text-align: center;
+  background: rgb(144, 46, 46);
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+ 
+  border-radius: 6px 6px 6px 6px
+}
+
+#project-title{
+  font-size: 1.2vw;
+  margin: 0;
+}
+
+.profile{
+  display: block;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 400px;
+  max-width: 600px;
+  border-top: 4px solid var(--site-border);
+  border-bottom: 3px solid var(--site-border);
+  border-left: 3px solid var(--site-border);
+  border-right: 3px solid var(--site-border);
+  border-radius: 5px 5px 0 0;
+}
+
+#contact{
+background-color: rgb(150, 0, 0);
+padding: 20px;
+margin: 0;
+width: 100%;
+height: 100%;
+}
+
+.personal-title{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 40px;
+  overflow: hidden;
+}
+
+.contacting{
+  font-size: 25px;
+  display: flex;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.slide:hover{
+  animation: grow 3s linear infinite normal;
+}
+
+.contact-word{
+  margin: 10px auto;
+}
+
+.free{
+  display: flex;
+  justify-content: center;
+}
+
+#profile-link{
+  text-decoration: none;
+  color: black;
+}
+
+@keyframes grow{
+  10%{
+    transform: scale(1.1);
+  }
+    30%{
+    transform: scale(1.2);
+   }
+      50%{
+    transform: scale(1.1);
+   }
+}
