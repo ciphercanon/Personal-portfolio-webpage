@@ -1,5 +1,5 @@
 # Personal-portfolio-webpage
-on the fifth days of FreeCodeCamp learning HTML and CSS 
+on the six days of FreeCodeCamp learning HTML and CSS 
 
 ## Live Site
 [See live on netlify] - https://personal-portfolio-1-0.netlify.app/
